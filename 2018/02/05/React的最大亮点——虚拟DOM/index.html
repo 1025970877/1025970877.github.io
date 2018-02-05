@@ -129,14 +129,14 @@
 <p>在实际开发中无需关心虚拟DOM是如何运作的，但理解其运行机制不仅有助于更好的理解React组件的生命周期，而且对于进一步优化 React程序也有很大帮助。</p>
 <p>1、传统App与React App的对比：</p>
 <p>传统App：</p>
-<p><img src="images/20170504161311010.png" alt="Alt text"></p>
+<p><img src="/images/20170504161311010.png" alt="Alt text"></p>
 <p>React App：</p>
-<p><img src="images/20170504161319670.png" alt="Alt text"></p>
+<p><img src="/images/20170504161319670.png" alt="Alt text"></p>
 <p>innerHTML：render html字符串 + 重新创建所有 DOM 元素</p>
 <p>虚拟DOM：render 虚拟DOM + diff + 更新必要的 DOM 元素</p>
 <p>2、虚拟DOM的原理：</p>
 <p>React会在内存中维护一个虚拟DOM树，对这个树进行读或写，实际上是对虚拟DOM进行。当数据变化时，React会自动更新虚拟DOM，然后将新的虚拟DOM和旧的虚拟DOM进行对比，找到变更的部分，得出一个diff，然后将diff放到一个队列里，最终批量更新这些diff到DOM中。</p>
-<p><img src="images/20170504161331322.png" alt="Alt text"></p>
+<p><img src="/images/20170504161331322.png" alt="Alt text"></p>
 <p>3、虚拟DOM的优点：</p>
 <p>最终表现在DOM上的修改只是变更的部分，可以保证非常高效的渲染。</p>
 <p>4、虚拟DOM的缺点：</p>
